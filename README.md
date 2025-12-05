@@ -78,7 +78,7 @@ python3 get_user_prs.py --repository <repo_name> --user "<User Display Name>"
 **Example:**
 
 ```bash
-python3 get_user_prs.py --repository lhg --user "Deniz KALKAN"
+python3 get_user_prs.py --repository lhg --user "USER_NAME"
 ```
 
 **Options:**
@@ -126,7 +126,7 @@ The `get_pr_comments.py` script follows this workflow:
 ## Example Output
 
 ```
-Fetching PRs for user: Deniz KALKAN...
+Fetching PRs for user: USER NAME...
 Found 25 PRs to process...
 Processing PR 12891 (1/25)...
 Processing PR 12078 (2/25)...
