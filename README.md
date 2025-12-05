@@ -1,4 +1,4 @@
-# Azure DevOps PR Comment Checker
+# Azure DevOps PR Review Extractor
 
 Python scripts to retrieve and analyze Pull Request comments from Azure DevOps using the Azure CLI.
 
