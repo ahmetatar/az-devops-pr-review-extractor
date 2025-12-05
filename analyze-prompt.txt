@@ -1,0 +1,60 @@
+Task:
+I will provide you with a JSON file containing code review comments made on pull requests created by developers on my team.
+The JSON format looks like this:
+
+[
+  { reviewer_name: "Ahmet Atar", comment: "...", date: "2025-11-24T16:02:47.68Z" },
+  ...
+]
+Using this data, I want you to perform the following analysis:
+
+1. Classify All Comments
+Automatically classify each comment into one or more of the following categories:
+	• Code Quality
+	• Performance
+	• Security
+	• Clean Code / Best Practices
+	• Missing Tests
+	• Missing Documentation
+	• Architecture / Design Issues
+	• Formatting / Linting
+	• Naming Issues
+	• Other
+Indicate which category each comment belongs to.
+
+2. Identify Repeated Errors and Problem Patterns
+	• Group together similar comments or recurring issues.
+	• Detect patterns of repeated mistakes across different PRs.
+	• Highlight issues that occur frequently (e.g., “This issue has a high recurrence rate”).
+
+3. Time-Based Trend Analysis
+	• Analyze patterns by date (e.g., “most common issues in the past 30 days”).
+	• Identify which types of errors are increasing or decreasing over time.
+
+4. Developer-Specific Growth Areas
+The JSON does not contain developer names (only reviewer names), so identify improvement areas based solely on the comment contents.
+For each developer (or generally for the team if individual names cannot be derived):
+	• Most common mistake categories
+	• Types of recurring feedback
+	• Key areas for improvement
+	• Topics reviewers point out frequently
+	If developer identity cannot be determined from the data, create team-level improvement insights based on comment patterns.
+
+5. Produce Insights and Recommendations
+For each major issue category:
+	• Why might this issue be occurring?
+	• What skill gaps in the team might be causing it?
+	• Suggested training, resources, or practices to reduce recurrence
+	• Team-wide actions that could improve overall code quality
+
+6. Generate a Final Summary Report
+Present the output in the following structure:
+A. Top 5 most frequently recurring issue types
+B. Error trends (time-based analysis)
+C. Developer-specific or team-level improvement areas
+D. Recommended team actions
+
+Notes:
+	• Use natural language similarity to cluster similar comments.
+	• When needed, rewrite comments into “issue summaries.”
+If the JSON file is large, process it in summarized form while preserving accuracy.
