@@ -20,7 +20,7 @@ Ensure you're logged in to Azure DevOps:
 
 ```bash
 az login
-az devops configure --defaults organization=https://dev.azure.com/LHG-DES project=lhg
+az devops configure --defaults organization=https://dev.azure.com/ORGANIZATION project=PROJECT
 ```
 
 ## Scripts
@@ -45,7 +45,7 @@ python3 get_pr_comments.py --repository <repo_name> --user "<User Display Name>"
 **Example:**
 
 ```bash
-python3 get_pr_comments.py --repository lhg --user "Deniz KALKAN"
+python3 get_pr_comments.py --repository <repo_name> --user "<User Display Name>"
 ```
 
 **Options:**
@@ -78,7 +78,7 @@ python3 get_user_prs.py --repository <repo_name> --user "<User Display Name>"
 **Example:**
 
 ```bash
-python3 get_user_prs.py --repository lhg --user "USER_NAME"
+python3 get_user_prs.py --repository <repo_name> --user "<User Display Name>"
 ```
 
 **Options:**
@@ -99,8 +99,8 @@ python3 get_user_prs.py --repository lhg --user "USER_NAME"
 Both scripts use hard-coded organization and project values:
 
 ```python
-ORGANIZATION = "LHG-DES"
-PROJECT = "lhg"
+ORGANIZATION = "ORG"
+PROJECT = "PRJ"
 ```
 
 To use with a different organization or project, modify these values in the script files.
@@ -145,7 +145,7 @@ If you encounter authentication errors:
 ```bash
 az logout
 az login
-az devops configure --defaults organization=https://dev.azure.com/LHG-DES project=lhg
+az devops configure --defaults organization=https://dev.azure.com/ORGANIZATION project=PROJECT
 ```
 
 ### No PRs Found
