@@ -17,8 +17,8 @@ import argparse
 import os
 
 # Hard-coded organization and project
-ORGANIZATION = "LHG-DES"
-PROJECT = "lhg"
+ORGANIZATION = "ORG"
+PROJECT = "PRJ"
 
 def get_repository_id(repository_name):
     """
